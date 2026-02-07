@@ -1,0 +1,34 @@
+@media screen and (max-width:767px){
+    
+    /* index */
+
+    .title h1{
+        font-size: 45px;
+    }
+    #letter-D{
+        font-size: 130px;
+    }
+    .AskQuestion p{
+        font-size: 20px;
+    }
+    #loader h2{
+        font-size: 40px;
+    }
+    /* présentation */
+    .titleOfStory{
+        font-size: 4em;
+        margin-bottom: 2em;
+    }
+    .presentation{
+        margin-bottom: 15em;
+    }
+    .scene {
+        margin-top: 30em;
+    }
+    /* COOL */
+    .sectionCool h1{
+        width:9em;
+    }
+}
+
+@media screen  and (min-width:768px ) and (max-width:1024px){}

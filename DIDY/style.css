@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* page Index */
+.bodyIndex{
+    background-image: url('DIDY/images/silver-wedding-rings-hang-plate.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+}
+
+.sectionIndex{
+    height: 100vh;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+}
+.AskQuestion{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+.title h1{
+    font-size: 65px;
+    color: #C9A24D;
+}
+#letter-D{
+    color: #8B1E1E; 
+    font-size: 150px;
+}
+.AskQuestion p{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #F5F5F0;
+}
+.AskQuestionDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15em;
+}
+.AskQuestion div button{
+    width: 90px;
+    height: 45px;
+    font-weight: bolder;
+    color: #8B1E1E; 
+    font-size: 20px;
+}
+#buttonNon{
+    transition: transform 0.3s ease;
+}
+.chargement{
+    display: none;
+}
+
+#loader{
+    text-align: center;
+    font-weight: bolder;
+}
+#loader h2{
+    color: #F5F5F0;
+    font-size: 80px;
+}
+#jtm{
+    color: #8B1E1E; 
+}
+
+#loader svg{
+    width: 100px;
+    height: 100px;
+}
+.load{
+    width: 40px;
+    height: 40px;
+    border: 4px solid #c93f3f;
+    border-top: 4px solid #878383;
+    border-radius: 50%;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+/* page presentation */
+.storyLove{
+    background-image: url('DIDY/images/majestic-mountain-range-illuminated-by-sunrise-generated-by-ai.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.globalBg {
+    position: fixed;
+    inset: 0;
+    background-image: url('DIDY/images/Alliance.jpeg');
+    background-size: cover;
+    background-position: center;
+    transform: translateY(100%);
+    transition: transform 1.4s ease;
+    z-index: 1;
+}
+
+.sectionTitle{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.containerStoryLoveTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+    transition: transform 1.2s ease;
+}
+
+.titleOfStory{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 90px;
+    font-weight: bolder;
+    color: #EAD9C3;
+    overflow: hidden;
+}
+
+.titleOfStory span {
+    display: inline-block;
+    opacity: 0;
+}
+
+.left {
+    transform: translateX(-150px);
+    animation: slideLeft 3s ease-out forwards;
+}
+  
+.right {
+    transform: translateX(150px);
+    animation: slideRight 3s ease-out forwards;
+    animation-delay: 0.3s;
+}
+  
+@keyframes slideLeft {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+  
+@keyframes slideRight {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+#btnLireStory {
+    font-size: 20px;
+    width: 10em;
+    height: 3em;
+    font-weight: bolder;
+    background-color: #EAD9C3;
+    border: none;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+body.active .containerStoryLoveTitle {
+    transform: translateY(-220px);
+}
+
+body.active #btnLireStory {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+body.active .globalBg {
+    transform: translateY(0);
+}
+
+.presentation {
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .1s ease;
+}
+
+body.active .presentation {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scene {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    opacity: 0;
+    margin-top: 5em;
+}
+.containerPresentationImg,
+.containerPresentationTxt {
+    opacity: 0;
+    transition: all 2.8s ease;
+}
+
+.containerPresentationImg {
+    transform: translateX(-150px);
+}
+.containerPresentationImg img{
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+.containerPresentationTxt {
+    transform: translateX(150px);
+    height: 350px;
+    width: 350px;
+    color: #fefef9;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bolder;
+    text-align: justify;
+}
+.containerPresentationTxt span{
+    color: #7a212b;
+    background: rgba(245, 238, 220, 0.55);
+}
+.spanWhite{
+    color: #F5F5F0;
+    background: rgba(245, 238, 220, 0.55);
+}
+
+.scene.active {
+    opacity: 1;
+}
+.scene.active .containerPresentationImg,
+.scene.active .containerPresentationTxt {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.scene.exit {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+
+
+.endButtons {
+    display: none;
+    gap: 2em;
+}
+
+
+.endButtons.show {
+    display: flex;
+}
+
+.endButtons button {
+    font-size: 18px;
+    padding: 1em 2em;
+    font-weight: bold;
+    border: none;
+    background: #EAD9C3;
+    cursor: pointer;
+}
+/* COOL */
+
+.sectionCool{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    transition: transform 1.2s ease;
+}
+.sectionCool h1{
+    width:20em;
+    color: #d8cfbd;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.moi{
+    color: blanchedalmond;
+    margin-top: 2em;
+    font-size:20px ;
+}
+.moi span {
+    display: inline-block;
+    opacity: 0;
+}
+.nom{
+    color: #fefafa;
+}
+.contact{
+    margin-top: 2em;
+    height: 9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: aliceblue;
+}
+.divFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 11em;
+    
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bolder;
+}
