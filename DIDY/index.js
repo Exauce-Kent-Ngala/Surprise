@@ -18,7 +18,7 @@ btnOui.addEventListener('click', () => {
     },5000)
 })
 btnNon.addEventListener('mouseover', () =>{
-    const randomX = (Math.random() * 700)-400;
+    const randomX = (Math.random() * 400)-200;
     const randomY = (Math.random() * 300)-150;
     btnNon.style.transform = `translate(${randomX}px, ${randomY}px)`
     compteur++;
