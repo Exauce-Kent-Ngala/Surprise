@@ -5,14 +5,10 @@
 }
 /* page Index */
 .bodyIndex{
-    background-image: url('DIDY/images/silver-wedding-rings-hang-plate.jpg');
+    background-image: url('images/silver-wedding-rings-hang-plate.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    flex-direction: row;
-    align-content: center;
-    text-align: center;
 }
 
 .sectionIndex{
@@ -72,7 +68,7 @@
     font-weight: bolder;
 }
 #loader h2{
-    color: #F5F5F0;
+    color: #C9A24D;
     font-size: 80px;
 }
 #jtm{
@@ -99,7 +95,7 @@
 
 /* page presentation */
 .storyLove{
-    background-image: url('DIDY/images/majestic-mountain-range-illuminated-by-sunrise-generated-by-ai.jpg');
+    background-image: url('images/majestic-mountain-range-illuminated-by-sunrise-generated-by-ai.jpg');
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
@@ -108,7 +104,7 @@
 .globalBg {
     position: fixed;
     inset: 0;
-    background-image: url('DIDY/images/Alliance.jpeg');
+    background-image: url('images/Alliance.jpeg');
     background-size: cover;
     background-position: center;
     transform: translateY(100%);
@@ -136,7 +132,6 @@
 .titleOfStory{
     text-align: center;
     letter-spacing: 5px;
-    font-size: 90px;
     font-weight: bolder;
     color: #EAD9C3;
     overflow: hidden;
@@ -178,7 +173,7 @@
     height: 3em;
     font-weight: bolder;
     background-color: #EAD9C3;
-    border: none;
+    color: #000;
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -289,9 +284,9 @@ body.active .presentation {
     font-size: 18px;
     padding: 1em 2em;
     font-weight: bold;
-    border: none;
     background: #EAD9C3;
     cursor: pointer;
+    color: #000;
 }
 /* COOL */
 
@@ -342,4 +337,9 @@ body.active .presentation {
     flex-direction: column;
     justify-content: space-around;
     font-weight: bolder;
+}
+
+.liens a{
+    color: aliceblue;
+    text-decoration: none;
 }

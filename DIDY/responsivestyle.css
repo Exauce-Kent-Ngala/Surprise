@@ -15,15 +15,47 @@
         font-size: 40px;
     }
     /* présentation */
+    .storyLove{
+        height: 100vh;
+    }
     .titleOfStory{
-        font-size: 4em;
         margin-bottom: 2em;
     }
+
+    .left {
+        font-size: 50px;
+    }
+      
+    .right {
+        font-size: 50px;
+    }
     .presentation{
-        margin-bottom: 15em;
+        margin-bottom: 5em;
     }
     .scene {
-        margin-top: 30em;
+        margin-top: 20em;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .containerPresentationImg img{
+        height: 300px;
+        width: 300px;
+    }
+    
+    .containerPresentationTxt {
+        height: 300px;
+        width: 300px;
+        color: #fefef9;
+        font-size: 20px;
+    }
+    .containerPresentationTxt span{
+        color: #7a212b;
+        background: rgba(245, 238, 220, 0.55);
+    }
+    .spanWhite{
+        color: #F5F5F0;
+        background: rgba(245, 238, 220, 0.55);
     }
     /* COOL */
     .sectionCool h1{
